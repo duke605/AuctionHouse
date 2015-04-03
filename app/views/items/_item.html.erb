@@ -1,0 +1,19 @@
+<div class="item-card">
+    <% user ||= nil %>
+
+    <h2 class="item-title"><%= item.local_name %></h2>
+    <p class="item-image"><%= image_tag item.image_filename %></p>
+    <p><span class="label">Price: </span><%= item.price %></p>
+    <p><span class="label">Quantity Remaining: </span><%= item.quantity_remaining %></p>
+
+    <p class="options">Options:</p>
+    <% if user %>
+      <% if user == item.user %>
+        <p class="item-links"></p>
+      <% else %>
+
+      <% end %>
+    <% else %>
+        <p class="item-links"><%= link_to 'Login', :login, class: 'button' %></p>
+    <% end %>
+</div>

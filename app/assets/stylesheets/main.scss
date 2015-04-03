@@ -1,0 +1,31 @@
+$family: "Slabo 27px";
+
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+body {
+  background-image: url(dirt.png);
+  margin: 0px;
+  padding: 0px;
+}
+
+a.button {
+  border: 2px solid #000;
+  background-image: url(button-off.png);
+  padding: 3px 7px;
+  text-decoration: none;
+  position: relative;
+  font-font: $family;
+  color: #FFF;
+  font-weight: bold;
+
+  box-shadow: inset -2px -2px 1px #2f2f2f;
+}
+
+a:hover {
+  background-image: url(button-on.png);
+  color: #f3fa2d;
+}
+
+a:active {
+  background-image: url(button-click.png);
+}

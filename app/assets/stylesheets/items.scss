@@ -1,0 +1,76 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$family: "Slabo 27px";
+
+@mixin emphasize {
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 2px 2px #383838;
+}
+
+div.item-card {
+  font-family: $family;
+  font-size: 18px;
+  width: 300px;
+  hight: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  padding: 7px;
+  border: 2px outset #000;
+  background-color: #CCC;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px #000;
+
+  h2 {
+    @include emphasize;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+
+  p {
+    margin: 4px 0px;
+
+    span { @include emphasize }
+  }
+
+  p.options {
+    margin: 10px 0px 5px 10px;
+
+    @include emphasize
+  }
+
+  p.item-image {
+    text-align: center;
+    margin: 0px;
+
+    img {
+      width: 64px;
+      height: 64px;
+
+      border-left: 2px inset #363636;
+      border-top: 2px inset #363636;
+      border-right: 2px inset #fdfdfe;
+      border-bottom: 2px inset #fdfdfe;
+    }
+  }
+
+
+  p.item-links {
+    text-align: center;
+  }
+}
+
+div.item-card:before {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  content: " ";
+  border: 2px outset #FFF;
+  border-radius: 10px;
+}

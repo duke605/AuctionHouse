@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  metadata: 1
+  quantity: 1
+  price: 1
+  quantity_left: 1
+  status: MyString
+  quantity_stored: 1
+  : 1
+  user_id: 1
+
+two:
+  name: MyString
+  metadata: 1
+  quantity: 1
+  price: 1
+  quantity_left: 1
+  status: MyString
+  quantity_stored: 1
+  : 1
+  user_id: 1

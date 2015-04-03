@@ -1,0 +1,15 @@
+<h1>LOGIN</h1>
+
+<%= form_for :user, url: :login do |f| %>
+    <div class="login-container">
+        <ul>
+          <li><%= f.label :email %></li>
+          <li><%= f.text_field :email %></li>
+          <li class="sep"></li>
+          <li><%= f.label :password %></li>
+          <li><%= f.password_field :password %></li>
+        </ul>
+
+      <%= f.submit 'Login' %>
+    </div>
+<% end %>
